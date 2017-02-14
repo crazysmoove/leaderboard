@@ -9,14 +9,15 @@
 <body>
     
     <!-- target container -->
-    <div class='react-container'></div>
+    <div id='react-container'></div>
 
     <!-- react libraries -->
     <script src='https://fb.me/react-15.1.0.js'></script>
     <script src='https://fb.me/react-dom-15.1.0.js'></script>
 
     <script>
-        // todo...
+        var dish = React.createElement('h1', null, 'Baked Salmon');
+        ReactDOM.render(dish, document.getElementById('react-container'));
     </script>
     
 </body>
